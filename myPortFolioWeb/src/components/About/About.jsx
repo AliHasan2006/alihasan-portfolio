@@ -2,89 +2,85 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import ProfileImgNew from '../../assets/ProfileImgNew.png';
 import Tilt from 'react-parallax-tilt';
-import { FaLongArrowAltDown } from "react-icons/fa";
 
 function About() {
   return (
     <section
       id='about'
-      // Simplified responsive padding for the section
-      className='py-4 px-6 mb-0 sm:px-10 lg:px-48 font-poppins mt-8'
+      className='py-9 px-6 sm:px-10 lg:px-32 font-poppins mt-8'
     >
-      <div className='flex flex-col items-center'>
-        {/* Profile Image (Tilt) */}
-        <div className="flex justify-center p-1 bg-gradient-custom w-49 h-49 sm:w-65 sm:h-65 md:w-[17.5rem] md:h-[17.5rem] rounded-full">
+      <div className='flex flex-col items-center text-center'>
+
+        {/* Profile Image */}
+  <div className='flex justify-center'>
+        <div className="p-[3px] bg-gradient-custom rounded-full">
           <Tilt
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[17rem] md:h-[17rem] rounded-full"
-            tiltMaxAngleX={20}
-            tiltMaxAngleY={20}
+            tiltMaxAngleX={15}
+            tiltMaxAngleY={15}
             perspective={1000}
             scale={1.05}
             transitionSpeed={1000}
             gyroscope={true}
+            className="rounded-full"
           >
             <img
               src={ProfileImgNew}
               alt="Ali Hasan"
-              className="w-full h-full rounded-full object-cover drop-shadow-[2_5px_5px_rgba(117,85,255,0.5)]"
+              className="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 rounded-full object-cover border-2 border-[#009EC5]"
             />
           </Tilt>
         </div>
+      </div>
 
         {/* Text Content */}
-        <div className='text-center mt-8'>
-          {/* Greetings - Used 'font-serif' for unique heading look. Replace with your custom font utility (e.g., 'font-unique-heading') */}
-          <div className='text-4xl sm:text-5xl md:text-6xl font-poppins font-medium text-white leading-tight flex justify-center'>
-            <h1>Hey,  I'm</h1>
-            <h1 className='bg-gradient-custom bg-clip-text text-transparent'>&nbsp;Ali Hasan</h1>
-          </div>
-          <h3 className="text-2xl font-semibold bg-gradient-custom bg-clip-text text-transparent sm:text-4xl md:text-5xl font-serif leading-tight mt-4">
-            <span className="text-white">I am a </span>
+        <div className='mt-6 sm:mt-8 px-2'>
+          {/* Headline */}
+          <h1 className='text-3xl sm:text-5xl md:text-6xl font-semibold text-white leading-snug flex flex-wrap justify-center'>
+            Hey,&nbsp;I'm&nbsp;
+            <span className='bg-gradient-custom bg-clip-text text-transparent'>
+              Ali Hasan
+            </span>
+          </h1>
+
+          {/* Type Animation */}
+          <h3 className="text-lg sm:text-2xl md:text-3xl font-semibold mt-4 text-white">
+            I am a{' '}
             <TypeAnimation
               sequence={[
                 'Fullstack Developer', 2000,
                 'Frontend Developer', 2000,
                 'Backend Developer', 2000,
                 'React Developer', 2000,
-                'Web Developer' , 2000
-                // 'MERN Stack Developer', 2000,
-                // 'Java Problem Solver', 2000,
+                'Web Developer', 2000
               ]}
               wrapper="span"
               cursor={true}
               repeat={Infinity}
               speed={50}
-              style={{ 
-                display: 'inline-block', 
-                // Custom color applied directly in style
-              }}
+              className='bg-gradient-custom bg-clip-text text-transparent'
             />
           </h3>
 
-          {/* About me Paragraph - Added 'font-poppins' */}
-          <p className='text-center mb-6 mt-6 leading-relaxed max-w-2xl mx-auto font-poppins text-gray-400'>
-            I am a passionate Software Developer with expertise in building clean, user-friendly, and performance-driven applications.
+          {/* About Paragraph */}
+          <p className='text-gray-400 mt-4 text-sm sm:text-base max-w-md mx-auto leading-relaxed'>
+            I am a passionate Software Developer with expertise in building clean,
+            user-friendly, and performance-driven applications.
           </p>
-          
+
           {/* Buttons */}
-          <div 
-            id="btn" 
-            className="flex flex-row justify-center gap-4 md:gap-5 mt-3"
-          >
-            {/* Resume Button */}
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
             <a
               href="https://drive.google.com/file/d/1FHNhwFeqya6-67OmS5oNxsTSo1eTiRfj/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-white py-4 px-6 md:px-6 rounded-full text-md font-semibold transition duration-300 transform hover:scale-105 bg-gradient-custom"
+              className="inline-block text-white py-3 md:py-4 px-6 rounded-full text-sm sm:text-base font-semibold transition-transform hover:scale-105 bg-gradient-custom"
             >
               View Resume
             </a>
 
-            {/* Work Button */}
             <a
-              href='#projects'
-              className="inline-block text-white py-4 px-6 md:px-8 rounded-full text-md font-semibold transition duration-300 transform hover:scale-105 border-2 border-white hover:border-[#009EC5]"
+              href="#projects"
+              className="inline-block text-white py-3 md:py-4 px-6 md:px-8 rounded-full text-sm sm:text-base font-semibold transition-transform hover:scale-105 border-2 border-white hover:border-[#009EC5]"
             >
               My Work
             </a>
