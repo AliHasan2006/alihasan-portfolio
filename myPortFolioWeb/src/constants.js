@@ -8,10 +8,6 @@ import angularLogo from './assets/tech_logo/angular.png';
 import reduxLogo from './assets/tech_logo/redux.png';
 import nextjsLogo from './assets/tech_logo/nextjs.png';
 import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
-import gsapLogo from './assets/tech_logo/gsap.png';
-import materialuiLogo from './assets/tech_logo/materialui.png';
-import bootstrapLogo from './assets/tech_logo/bootstrap.png';
-import springbootLogo from './assets/tech_logo/springboot.png';
 import nodejsLogo from './assets/tech_logo/nodejs.png';
 import expressjsLogo from './assets/tech_logo/express.png';
 import mysqlLogo from './assets/tech_logo/mysql.png';
@@ -33,30 +29,21 @@ import vercelLogo from './assets/tech_logo/vercel.jpg';
 import postgreLogo from './assets/tech_logo/postgre.png';
 import csharpLogo from './assets/tech_logo/csharp.png';
 import gitHubNew from './assets/tech_logo/gitHubNew.jpg'
-
+import bootstrap from './assets/tech_logo/bootstrap.png'
 // Experience Section Logo's
-import webverseLogo from './assets/company_logo/webverse_logo.png';
-import agcLogo from './assets/company_logo/agc_logo.png';
-import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
+import zennexLogo from './assets/company_logo/zennexLogo.jpg';
 
 // Education Section Logo's
-import glaLogo from './assets/education_logo/gla_logo.png';
-import bsaLogo from './assets/education_logo/bsa_logo.png';
-import vpsLogo from './assets/education_logo/vps_logo.png';
-
-// Project Section Logo's
-import githubdetLogo from './assets/work_logo/github_det.png';
-import csprepLogo from './assets/work_logo/cs_prep.png';
-import movierecLogo from './assets/work_logo/movie_rec.png';
-import taskremLogo from './assets/work_logo/task_rem.png';
-import npmLogo from './assets/work_logo/npm.png';
-import webverLogo from './assets/work_logo/web_dig.png';
-import cmLogo from './assets/work_logo/cm.png';
-import imagesearchLogo from './assets/work_logo/image_search.png';
-import removebgLogo from './assets/work_logo/remove_bg.png';
-import zennexLogo from './assets/company_logo/zennexLogo.jpg';
 import kmcluLogo from './assets/education_logo/kmclu_logo.png';
 import vibgyorLogo from './assets/education_logo/vibgyor_logo.png';
+
+// Project Section Logo's
+import remove_bg from './assets/work_logo/remove_bg.png';
+import npm from './assets/work_logo/npm.png';
+import github_det from './assets/work_logo/github_det.png';
+import landingPage from './assets/work_logo/landingPage.png';
+// /import image_search from './assets/work_logo/image_search.png';
+
 
 export const SkillsInfo = [
   {
@@ -71,9 +58,7 @@ export const SkillsInfo = [
       { name: 'Redux', logo: reduxLogo },
       // { name: 'Next JS', logo: nextjsLogo },
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
-      // { name: 'GSAP', logo: gsapLogo },
-      // { name: 'Material UI', logo: materialuiLogo },
-      // { name: 'Bootstrap', logo: bootstrapLogo },
+      { name: 'Bootstrap', logo: bootstrap},
     ],
   },
   {
@@ -107,7 +92,6 @@ export const SkillsInfo = [
       { name: 'GitHub', logo: gitHubNew },
       { name: 'VS Code', logo: vscodeLogo },
       { name: 'Postman', logo: postmanLogo },
-      // { name: 'Compass', logo: mcLogo },
       { name: 'Vercel', logo: vercelLogo },
       { name: 'Netlify', logo: netlifyLogo },
       { name: 'Figma', logo: figmaLogo },
@@ -133,51 +117,9 @@ export const SkillsInfo = [
         "Redux",
       ],
     }
-    // {
-    //   id: 1,
-    //   img: agcLogo,
-    //   role: "Fullstack Engineer",
-    //   company: "Agumentik Group of Companies",
-    //   date: "July 2023 - March 2024",
-    //   desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
-    //   skills: [
-    //     "ReactJS",
-    //     "Redux",
-    //     "JavaScript",
-    //     "Tailwind CSS",
-    //     "HTML",
-    //     "CSS",
-    //     "SQL",
-    //   ],
-    // },
-    // {
-    //   id: 2,
-    //   img: newtonschoolLogo,
-    //   role: "Frontend Intern",
-    //   company: "Newton School",
-    //   date: "September 2021 - August 2022",
-    //   desc: "Worked as a Frontend Developer Intern, designing and implementing scalable UI components and responsive websites using HTML, CSS, JavaScript, Bootstrap, and Material UI. Collaborated with the design team to translate wireframes and prototypes from Figma into interactive, user-friendly web pages.",
-    //   skills: [
-    //     "HTML",
-    //     "CSS",
-    //     "Javascript",
-    //     "Bootstrap",
-    //     "Figma",
-    //     "Material UI",
-    //   ],
-    // },
   ];
   
   export const education = [
-    // {
-    //   id: 0,
-    //   img: glaLogo,
-    //   school: "KMC Language University",
-    //   date: "Sept 2023 - July 2026",
-    //   grade: "8.51 SGPA",
-    //   desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
-    //   degree: "Master of Computer Applications - MCA",
-    // },
     {
       id: 0,
       img: kmcluLogo,
@@ -204,107 +146,48 @@ export const SkillsInfo = [
       grade: "92%",
       desc: "I completed my class 10th class from Vibgyor Public School, Raebareli, under the State board, where I studied Physics, Chemistry, Biology, and Mathematics (PCM).",
       degree: "CBSE(X) - Science with Computer Application",
-    }
-    // {
-    //   id: 3,
-    //   img: vpsLogo,
-    //   school: "Vatsalya Public School Govardhan, Mathura",
-    //   date: "Apr 2015 - March 2016",
-    //   grade: "87.5%",
-    //   desc: "I completed my class 10 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Science with Computer.",
-    //   degree: "CBSE(X), Science with Computer Application",
-    // },
+    },
   ];
   
   export const projects = [
+  {
+    img : github_det,
+    title: "GitInsight: GitHub Profile Detective",
+    type: "GitHub User Search & Metrics App",
+    description: "A sleek and responsive web application built to instantly fetch and display comprehensive information for any GitHub user. By simply entering a username, GitInsight utilizes the GitHub API to showcase key profile metrics like name, joined date, followers, following, public repositories, and location. The modern, utility-first UI is crafted with Tailwind CSS, providing a fast and seamless experience for developers and recruiters alike.",
+    imageSrc: "githubdetLogo",
+    technologies: ["React JS", "Axios (API Fetching)", "Tailwind CSS", "HTML", "JavaScript"],
+    demoLink: "https://github-account-finder-roan.vercel.app/",
+    codeLink: "https://github.com/AliHasan2006/web-dev-projects/tree/main/githubAccountFinder",
+  },
     {
-      id: 0,
-      title: "GitHub Profile Detective",
-      description:
-        "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
-      image: githubdetLogo,
-      tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
-      github: "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
-      webapp: "https://githubprofiledetective.netlify.app/",
-    },
-    {
-      id: 1,
-      title: "CS Prep",
-      description:
-        "A full-stack quiz-based platform designed for GATE/UGC NET students to practice previous year questions and create customized tests. The platform offers comprehensive profile stats and detailed results, helping students track and improve their preparation journey effectively.",
-      image: csprepLogo,
-      tags: ["React JS", "Node.js", "MongoDB", "Express", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/codingmastr/CSPrep",
-      webapp: "https://csprep.netlify.app/",
-    },
-    {
-      id: 2,
-      title: "Movie Recommendation App",
-      description:
-        "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it a go-to app for movie enthusiasts.",
-      image: movierecLogo,
-      tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/codingmastr/Movie-Recommendation-App",
-      webapp: "https://movie-recommendation-app-jet.vercel.app/",
-    },
-    {
-      id: 3,
-      title: "Email Validator NPM Package",
-      description:
-        "An efficient and customizable NPM package for validating email addresses. Built using React.js and Node.js, it provides robust validation features to help developers ensure that email inputs meet required formats and standards.",
-      image: npmLogo,
-      tags: ["React JS", "Node.js", "NPM", "Validation"],
-      github: "https://github.com/codingmastr/cmtk-email-validator",
-      webapp: "https://www.npmjs.com/package/cmtk-email-validator",
-    },
-    {
-      id: 4,
-      title: "Task Reminder Chrome Extension Tool",
-      description:
-        "A productivity-boosting Chrome extension designed to help users manage and remember their daily tasks. Built using JavaScript, it offers a simple interface with reminders and task notifications to keep users on track.",
-      image: taskremLogo,
-      tags: ["JavaScript", "Chrome Extension", "HTML", "CSS"],
-      github: "https://github.com/codingmastr/Task-Reminder-Tool",
-      webapp: "chrome://extensions/?id=kngheeibjnnidhfoomkpnbeghackheci",
-    },
-    {
-      id: 5,
-      title: "Webverse Digital",
-      description:
-        "The official website for Webverse Digital, a creative digital marketing agency. Built using HTML, CSS, and JavaScript, it features visually appealing animations and a clean design to showcase the agency's services.",
-      image: webverLogo,
-      tags: ["HTML", "CSS", "JavaScript", "Framer Motion"],
-      github: "https://github.com/codingmastr/Webverse-Digital",
-      webapp: "https://webversedigital.com/",
-    },
-    {
-      id: 6,
-      title: "Coding Master",
-      description:
-        "An ed-tech platform where users can access tech and coding-related blogs, notes, interview questions, e-books, and premium content with payment integration. Built with full-stack technologies for a seamless learning experience.",
-      image: cmLogo,
-      tags: ["React JS", "Node.js", "MongoDB", "Express", "Payment Integration"],
-      github: "https://codingmasterweb.in/",
-      webapp: "https://codingmasterweb.in/",
-    },
-    {
-      id: 7,
-      title: "Image Search App",
-      description:
-        "A React.js-based image search application that allows users to search and download high-quality images from the web. Built using external APIs to ensure a vast library of results for various queries.",
-      image: imagesearchLogo,
-      tags: ["React JS", "API", "Search Feature", "CSS", "Javascript"],
-      github: "https://github.com/codingmastr/Image-Search-App",
-      webapp: "https://imagsearch.netlify.app/",
-    },
-    {
-      id: 8,
-      title: "Image Background Remover",
-      description:
-        "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
-      image: removebgLogo,
-      tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
-      github: "https://github.com/codingmastr/Image-Background-Remover",
-      webapp: "https://removeyourbg.netlify.app/",
-    },
-  ];  
+    img : landingPage,
+    title: "Event Landing Page",
+    type: "Responsive Web Design & API Integration",
+    description: "A fully responsive, modern landing page designed for optimal viewing on all devices. It features a working **contact form** where user information is captured and sent to a specified email address using an external **API (e.g., EmailJS or a custom backend endpoint)**. Built solely with foundational web technologies, demonstrating proficiency in design, responsiveness, and asynchronous data submission.",
+    imageSrc: "landingPageScreenshot",
+    technologies: ["HTML", "CSS", "JavaScript", "API Integration", "Responsive Design"],
+    demoLink: "https://event-landing-web.vercel.app/",
+    codeLink: "https://github.com/AliHasan2006/event-landing-project",
+  },
+  {
+    img : remove_bg,
+    title: "Advanced Task Manager (Todo List)",
+    type: "State Management Application", // Category
+    description: "A feature-rich, single-page To-Do List application providing functionalities like adding, deleting, editing, and filtering tasks (Active, Completed, All). This project highlights expertise in **React's functional components** and utilizes the **Context API** for efficient global state management, ensuring a clean and scalable codebase. The modern and responsive UI is styled entirely with **Tailwind CSS**.",
+    // imageSrc: "todoListScreenshot", // Use an appropriate variable name for the image
+    technologies: ["HTML", "CSS", "React JS", "Tailwind CSS", "Context API", "Local Storage System"],
+    demoLink: "https://react-learning-c5ct.vercel.app/", // Replace with your actual live link
+    codeLink: "https://github.com/AliHasan2006/react-learning/tree/main/12todoAppUsingLocalStorage", // Replace with your actual GitHub link
+  },
+  {
+    img : npm,
+    title: "Advanced Password Generator",
+    type: "Security Utility Tool", // New Category
+    description: "An interactive and robust password generator application built with React. It features customizable options for password length and inclusion of uppercase letters, numbers, and special characters. The core logic utilizes **React's `useState` hook** for efficient state management (length, options, and output), providing a smooth user experience in generating strong, unique passwords. Styled for a sleek, responsive interface.",
+    imageSrc: "passwordGenScreenshot", // Use an appropriate variable name for the image
+    technologies: ["React JS", "useState Hook", "HTML", "CSS", "JavaScript"], // Added useState
+    demoLink: "https://react-learning-gold.vercel.app/", // Replace with your actual live link
+    codeLink: "https://github.com/AliHasan2006/react-learning/tree/main/05passWordGeneratorProject", // Replace with your actual GitHub link
+  }
+];

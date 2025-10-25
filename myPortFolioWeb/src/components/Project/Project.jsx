@@ -1,68 +1,88 @@
 import React from 'react'
 import { projects } from '../../constants'
+import { MdOpenInNew } from "react-icons/md";
 
 function Project() {
+
   return (
     <section
-      id="education"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans"
+      id="projects"
+      className="py-24 font-sans"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-white">Projects</h2>
+        <h2 className="text-4xl font-bold text-white px-[6vw] md:px-[7vw] lg:px-[16vw]">Projects</h2>
          <div className="w-32 h-1 bg-gradient-custom mx-auto mt-2"></div>
-        <p className="text-gray-400 mt-4 text-lg font-semibold">
+        <p className="text-gray-400 mt-4 text-lg font-semibold px-[6vw] md:px-[7vw] lg:px-[16vw]">
          A showcase of the projects I have worked on, highlighting my skills and experience in various technologies
         </p>
       </div>
             {/* Projects Grid */}
-<div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
-          <div
-            key={project.id}
-            onClick={() => handleOpenModal(project)}
-            className="border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 transition-transform duration-300"
-          >
-            <div className="p-6">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full rounded-md border border-gray-700"
-              />
+{/* <div className="py-16 sm:py-8"> */}
+      <div className="w-[82%] md:w-[70%] mx-auto">
+        
+        {/* Responsive Grid: Single column on small screens, two columns on large screens */}
+        <div className="grid gap-10 lg:grid-cols-2 lg:gap-8">
+          
+          {/* Map through the projects array to render each card */}
+          {projects.map((project, index) => (
+            <div 
+                 key={index} 
+                 className="flex flex-col rounded-xl border border-gray p-6 shadow-2xl transition duration-300 hover:shadow-lg hover:border-[#009EC5] hover:shadow-gray-700/50 mb-5"
+            >
+              
+              {/* Image/Screenshot Area */}
+            <div className="h-64 overflow-hidden rounded-lg border border-gray-700/50">
+                     {/* Actual Image using <img> tag */}
+                 <img 
+                src={project.img} 
+                alt={`${project.title} screenshot`} 
+                className="w-full h-full object-cover" 
+                 /> 
             </div>
-            <div className="p-6">
-              <h3 className="text-3xl font-bold">
-                {project.title}
-              </h3>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                {project.description}
-              </p>
-              <div className="flex flex-wrap gap-2 pt-2 border-t border-gray-800">
-                {project.tags.map((tag, index) => (
-                  <span
-                    key={index}
-                    className="bg-gray-700 text-gray-100 text-xs px-2 py-1 rounded"
-                  >
-                    {tag}
-                  </span>
-                ))}
+              
+              {/* Content Area */}
+              <div className="mt-8 flex-grow">
+                <h3 className="text-3xl font-bold text-gray-200 mb-2">{project.title}</h3>
+                <p className="text-gray-400 mb-4">{project.type}</p>
+                <p className="text-gray-400 text-base mb-6">{project.description}</p>
+                {/* Technologies */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.technologies.map((tech, i) => (
+                    <span 
+                      key={i} 
+                      className="text-sm cursor-pointer rounded-md font-semibold p-2 text-gray-300 bg-gray-600"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
-     <div className="flex space-x-4 pt-4">
-                <button className="flex items-center justify-center px-4 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition duration-150">
-                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                    Live Demo
-                </button>
-                <button className="flex items-center justify-center px-4 py-3 border border-gray-600 text-white font-semibold rounded-lg hover:bg-gray-800 transition duration-150">
-                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                    Code
-                </button>
+              {/* Action Buttons */}
+              <div className="mt-6 flex space-x-4 pt-4 border-t border-gray-700">
+                <a 
+                  href={project.demoLink} 
+                  className="flex items-center space-x-2 rounded-lg border border-white/20 bg-gray-200 px-4 py-2 text-sm font-medium text-black shadow-sm hover:bg-gray-300"
+                  target='_blank'
+                >
+                  <span><MdOpenInNew/></span>
+                  <span>Live Demo</span>
+                </a>
+                <a 
+                  href={project.codeLink} 
+                  className="flex items-center space-x-2 rounded-lg border border-white/10 px-4 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700"
+                  target='_blank'
+                >
+                  <span>Code</span>
+                </a>
+              </div>
             </div>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   )
 }
 
 export default Project;
+

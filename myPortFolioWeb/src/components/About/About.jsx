@@ -9,7 +9,7 @@ function About() {
     <section
       id='about'
       // Simplified responsive padding for the section
-      className='py-4 px-6 sm:px-10 lg:px-48 font-poppins mt-16 md:mt-20 lg:mt-12z'
+      className='py-4 px-6 mb-0 sm:px-10 lg:px-48 font-poppins mt-8'
     >
       <div className='flex flex-col items-center'>
         {/* Profile Image (Tilt) */}
@@ -34,15 +34,10 @@ function About() {
         {/* Text Content */}
         <div className='text-center mt-8'>
           {/* Greetings - Used 'font-serif' for unique heading look. Replace with your custom font utility (e.g., 'font-unique-heading') */}
-          <div className='text-4xl sm:text-5xl md:text-7xl font-poppins font-medium text-white mb-2 leading-tight flex justify-center'>
+          <div className='text-4xl sm:text-5xl md:text-6xl font-poppins font-medium text-white leading-tight flex justify-center'>
             <h1>Hey,  I'm</h1>
             <h1 className='bg-gradient-custom bg-clip-text text-transparent'>&nbsp;Ali Hasan</h1>
           </div>
-          
-          {/* TypeAnimation Section - Combined for all screen sizes */}
-          {/* TypeAnimation is placed in a single Div, and responsive Tailwind classes are used instead of 'hidden sm:visible' for cleaner code.
-              Removed unnecessary TypeAnimation props.
-          */}
           <h3 className="text-2xl font-semibold bg-gradient-custom bg-clip-text text-transparent sm:text-4xl md:text-5xl font-serif leading-tight mt-4">
             <span className="text-white">I am a </span>
             <TypeAnimation
@@ -51,8 +46,9 @@ function About() {
                 'Frontend Developer', 2000,
                 'Backend Developer', 2000,
                 'React Developer', 2000,
+                'Web Developer' , 2000
                 // 'MERN Stack Developer', 2000,
-                'Java Problem Solver', 2000,
+                // 'Java Problem Solver', 2000,
               ]}
               wrapper="span"
               cursor={true}
@@ -66,29 +62,29 @@ function About() {
           </h3>
 
           {/* About me Paragraph - Added 'font-poppins' */}
-          <p className='text-start md:text-center mb-10 mt-8 leading-relaxed max-w-2xl mx-auto font-poppins text-gray-400'>
+          <p className='text-center mb-6 mt-6 leading-relaxed max-w-2xl mx-auto font-poppins text-gray-400'>
             I am a passionate Software Developer with expertise in building clean, user-friendly, and performance-driven applications.
           </p>
           
           {/* Buttons */}
           <div 
             id="btn" 
-            className="flex flex-row justify-center gap-6 mt-5"
+            className="flex flex-row justify-center gap-4 md:gap-5 mt-3"
           >
             {/* Resume Button */}
             <a
               href="https://drive.google.com/file/d/1FHNhwFeqya6-67OmS5oNxsTSo1eTiRfj/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-white py-4 px-6 md:px-10 rounded-full text-md font-semibold transition duration-300 transform hover:scale-105 bg-gradient-custom"
+              className="inline-block text-white py-4 px-6 md:px-6 rounded-full text-md font-semibold transition duration-300 transform hover:scale-105 bg-gradient-custom"
             >
               View Resume
             </a>
 
             {/* Work Button */}
             <a
-              href='#skills'
-              className="inline-block text-white py-4 px-10 md:px-8 rounded-full text-md font-semibold transition duration-300 transform hover:scale-105 border-2 border-white hover:border-[#009EC5]"
+              href='#projects'
+              className="inline-block text-white py-4 px-6 md:px-8 rounded-full text-md font-semibold transition duration-300 transform hover:scale-105 border-2 border-white hover:border-[#009EC5]"
             >
               My Work
             </a>

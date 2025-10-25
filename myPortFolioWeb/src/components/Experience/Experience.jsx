@@ -4,12 +4,12 @@ import ZennexLogo from '../../assets/company_logo/zennexLogo.jpg' // replace wit
  function Experience() {
   return (
     <section id="experience"
-    className="mb-10"
+    className="py-22"
     >
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-white">EXPERIENCE</h2>
+        <h2 className="text-4xl font-bold text-white px-[6vw] md:px-[7vw] lg:px-[16vw]">EXPERIENCE</h2>
         <div className="w-32 h-1 bg-gradient-custom mx-auto mt-2"></div>
-        <p className="text-gray-400 mt-4 mx-2 text-lg font-semibold">
+        <p className="text-gray-400 mt-4 mx-2 text-lg font-semibold px-[6vw] md:px-[7vw] lg:px-[16vw]">
           A collection of my work experience and the roles I have taken in
           various organizations
         </p>
@@ -18,14 +18,17 @@ import ZennexLogo from '../../assets/company_logo/zennexLogo.jpg' // replace wit
       {/* Header */}
       <div className="flex items-center justify-center gap-4 mb-4">
         <a href="https://zennexsolutions.com/"
-           target="_blank"
-        >
-          <img
-          src={ZennexLogo}
-          alt="Company Logo"
-          className="w-24 h-24 rounded-lg object-contain border border-gray-600 transition duration-300 transform hover:scale-105"
-        />
-        </a>
+     target="_blank"
+    >
+             {/* **FIX APPLIED HERE (Wrapped img in a div)** */}
+             <div className="w-24 h-24 rounded-lg border border-gray-600 flex items-center justify-center bg-white transition duration-300 transform hover:scale-105 overflow-hidden">
+                <img
+                    src={ZennexLogo}
+                    alt="Company Logo"
+                    className="w-full h-full object-contain" // Now object-contain works better inside the div
+                />
+            </div>
+    </a>
         <div>
           <h2 className="text-2xl font-bold bg-gradient-custom bg-clip-text text-transparent">Web Designer & Developer</h2>
           <div className="flex flex-col">
@@ -51,7 +54,7 @@ import ZennexLogo from '../../assets/company_logo/zennexLogo.jpg' // replace wit
             (skill, index) => (
               <span
                 key={index}
-                className="text-black bg-gray-400 px-2 md:px-3 py-1 rounded-md text-lg font-medium  cursor-pointer transition"
+                className="text-black text-gray-300 bg-gray-600 px-2 md:px-3 py-1 rounded-md text-md font-medium  cursor-pointer transition"
               >
                 {skill}
               </span>
