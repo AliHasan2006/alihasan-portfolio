@@ -30,7 +30,7 @@ function Contact() {
       className="px-[12vw] md:px-[7vw] lg:px-[14vw] font-sans mb-20"
     >
       {/* Section Title */}
-      <div className="text-center mb-16">
+      <div className="text-center mb-12 md:mb-20">
         <h2 className="text-4xl font-bold text-white">Get In Touch</h2>
          <div className="w-32 h-1 bg-gradient-custom mx-auto mt-2"></div>
          <p className="text-gray-400 mt-4 text-lg font-semibold">
@@ -38,7 +38,7 @@ function Contact() {
         </p>
       </div>
 
-      <div  className='flex flex-col gap-12 md:flex-row text-white mt-20'>
+      <div  className='flex flex-col gap-12 md:flex-row text-white'>
         {/* left side */}
         <div className='md:w-1/2'>
          <h1 className='text-3xl sm:text-4xl md:text-5xl bg-gradient-custom bg-clip-text text-transparent font-semibold mb-8'>Let's Connect</h1>
@@ -76,7 +76,7 @@ function Contact() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full p-4 border-none rounded-lg bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-purple-500 focus:outline-none transition"
+              className="w-full p-4 border-none rounded-lg bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-[#009EC5] focus:outline-none transition"
             />
           </div>
 
@@ -91,7 +91,7 @@ function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full p-4 border-none rounded-lg bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-purple-500 focus:outline-none transition"
+              className="w-full p-4 border-none rounded-lg bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-[#009EC5] focus:outline-none transition"
             />
           </div>
 
@@ -106,13 +106,13 @@ function Contact() {
               onChange={handleChange}
               required
               rows="6" // Set the height of the textarea
-              className="w-full p-4 border-none rounded-lg bg-gray-800 text-white placeholder-gray-500 resize-y focus:ring-2 focus:ring-purple-500 focus:outline-none transition"
+              className="w-full p-4 border-none rounded-lg bg-gray-800 text-white placeholder-gray-500 resize-y focus:ring-2 focus:ring-[#009EC5] focus:outline-none transition"
             ></textarea>
           </div>
 
           {/* Submit Button */}
           <button type="submit"
-            className="w-full py-4 text-xl font-semibold rounded-xl text-black transition-all duration-300 transform hover:scale-[1.01] shadow-lg bg-gradient-custom"
+            className="w-full py-3 md:py-4 text-xl font-semibold rounded-xl text-black transition-all duration-300 transform hover:scale-[1.01] shadow-lg bg-gradient-custom"
           >
             Send message
           </button>

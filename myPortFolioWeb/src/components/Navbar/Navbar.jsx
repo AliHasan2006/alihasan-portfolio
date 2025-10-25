@@ -36,9 +36,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed bg-[#171717] py-8 top-0 mb-10 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[14vw] ${
+      className={`fixed bg-[#0c181d] py-8 top-0 mb-10 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[14vw] ${
         isScrolled
-          ? "bg-[#171717] w-[70vw] mx-auto bg-opacity-50 backdrop-blur-md shadow-md"
+          ? "bg-[#1c282c] w-[70vw] mx-auto bg-opacity-50 backdrop-blur-md shadow-md"
           : "bg-transparent"
       }`}
     >
@@ -99,7 +99,7 @@ const Navbar = () => {
         <div className="md:hidden">
           {isOpen ? (
             <FiX
-              className="text-5xl font-bold text-[#009EC5] cursor-pointer"
+              className="text-5xl font-bold text-[#009EC5] cursor-pointer z-100"
               onClick={() => setIsOpen(false)}
             />
           ) : (
@@ -113,7 +113,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Items */}
       {isOpen ? (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#171717] bg-opacity-50 backdrop-blur-lg z-70 rounded-lg shadow-lg md:hidden font-poppins"> {/* Added font-poppins here */}
+        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#1c282c] bg-opacity-60 backdrop-blur-lg z-70 rounded-lg shadow-lg md:hidden font-poppins"> {/* Added font-poppins here */}
           <ul className="flex flex-col items-center space-y-4 py-4 text-lg text-gray-300">
             {menuItems.map((item) => (
               <li

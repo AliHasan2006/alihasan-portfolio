@@ -31,7 +31,7 @@ const [lightMode, setLightMode] = useState(false);
         <Education />
         <Contact />
         <Footer />
-        <ThemeToggleButton />
+        {/* <ThemeToggleButton /> */}
         
    </div>
 </ThemeProvider>

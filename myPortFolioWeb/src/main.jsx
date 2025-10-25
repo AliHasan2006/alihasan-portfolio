@@ -7,6 +7,6 @@ import ThemeToggleButton from './components/ThemeToggleButton.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <ThemeToggleButton />
+    {/* <ThemeToggleButton /> */}
   </StrictMode>,
 )
