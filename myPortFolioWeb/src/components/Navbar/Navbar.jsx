@@ -99,12 +99,12 @@ const Navbar = () => {
         <div className="md:hidden">
           {isOpen ? (
             <FiX
-              className="text-5xl font-bold text-[#009EC5] cursor-pointer z-100"
+              className="text-4xl font-bold text-[#009EC5] cursor-pointer z-100"
               onClick={() => setIsOpen(false)}
             />
           ) : (
            <CgMenuRightAlt
-              className="text-5xl font-bold text-[#009EC5] cursor-pointer"
+              className="text-4xl font-bold text-[#009EC5] cursor-pointer"
               onClick={() => setIsOpen(true)}
             />
           )}

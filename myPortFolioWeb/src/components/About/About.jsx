@@ -43,7 +43,7 @@ function About() {
           </h1>
 
           {/* Type Animation */}
-          <h3 className="text-lg sm:text-2xl md:text-3xl font-semibold mt-4 text-white">
+          <h3 className="text-lg sm:text-2xl md:text-5xl font-semibold mt-2 sm:mt-4 text-white">
             I am a{' '}
             <TypeAnimation
               sequence={[
