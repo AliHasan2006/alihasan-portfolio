@@ -2,12 +2,12 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import ProfileImgNew from '../../assets/ProfileImgNew.png';
 import Tilt from 'react-parallax-tilt';
-import '../../index.css'
+
 function About() {
   return (
     <section
       id='about'
-      className='py-9 px-6 sm:px-10 lg:px-32 font-poppins mt-8 slide-up'
+      className='py-9 px-6 sm:px-10 lg:px-32 font-poppins mt-8'
     >
       <div className='flex flex-col items-center text-center'>
 
@@ -62,7 +62,7 @@ function About() {
           </h3>
 
           {/* About Paragraph */}
-          <p className='text-gray-400 mt-4 text-md sm:text-lg sm:text-lg md:px-[10vw] mx-auto  leading-relaxed'>
+          <p className='text-gray-400 mt-4 text-sm sm:text-base max-w-md mx-auto leading-relaxed'>
             I am a passionate Software Developer with expertise in building clean,
             user-friendly, and performance-driven applications.
           </p>
@@ -70,7 +70,7 @@ function About() {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
             <a
-              href="https://drive.google.com/file/d/1G1EpY0eMxk9oo7Z5ZqkYhPtsjusJ3eSX/view?usp=sharing"
+              href="https://drive.google.com/file/d/1FHNhwFeqya6-67OmS5oNxsTSo1eTiRfj/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-white py-3 md:py-4 px-6 rounded-full text-sm sm:text-base font-semibold transition-transform hover:scale-105 bg-gradient-custom"

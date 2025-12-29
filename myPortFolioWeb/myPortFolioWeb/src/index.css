@@ -47,18 +47,6 @@ html, body {
   background-color: #1a1a1a; /* Dark background */
   color: #f0f0f0;            /* Light text */
 }
-.slide-up {
-  opacity: 0;
-  transform: translateY(50px);
-  animation: slideUp 1s ease-out forwards;
-}
-
-@keyframes slideUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .theme-light {
   background-color: #ffffff; /* Light background */

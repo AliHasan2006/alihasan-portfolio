@@ -31,9 +31,9 @@ const Education = () => {
           >
             {/* Content Section */}
             <div
-              className={`w-full bg-[#0c181d] sm:max-w-md p-4 sm:p-8 rounded-2xl border border-white backdrop-blur-md ${
+              className={`w-full bg-[#0c181d] sm:max-w-md p-4 sm:p-8 rounded-2xl border border-white shadow-[inset_0_0_10px_1px_rgba(117,85,255,0.3),_0_0_10px_1px_rgba(117,85,255,0.3)] backdrop-blur-md ${
                 index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
-              } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105 hover:border-[#009EC5]`}
+              } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}
             >
               {/* Flex container for image and text */}
               <div className="flex items-center space-x-6">
