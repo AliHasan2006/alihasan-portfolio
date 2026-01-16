@@ -39,8 +39,8 @@ const Navbar = () => {
       className={`fixed p-2 z-50 transition-all duration-300 top-0 w-full bg-gray-900 shadow-md
         ${
           isScrolled
-            ? "top-0 w-full bg-gray-900 shadow-md"
-            : "top-0 md:top-4 left-1/2 -translate-x-1/2 w-full md:w-[80vw] lg:w-[70vw] md:rounded-2xl bg-gray-900 md:bg-gray-900 md:backdrop-blur-md shadow-lg"
+            ? "top-0 w-full bg-[#101f25] shadow-md"
+            : "top-0 md:top-4 left-1/2 -translate-x-1/2 w-full md:w-[80vw] lg:w-[70vw] md:rounded-2xl bg-[#101f25] md:bg-[#101f25] md:backdrop-blur-md shadow-lg"
         }
         `}
     >
@@ -103,7 +103,7 @@ const Navbar = () => {
         {/* Sidebar */}
         <div
           className={`absolute top-0 right-0 h-full w-[75%] max-w-[320px]
-            bg-gradient-to-b from-[#001325] to-[#020c1e]
+            bg-[#101f25]
             text-white px-6 py-8
             transform transition-transform duration-300
             ${isOpen ? "translate-x-0" : "translate-x-full"}`}
