@@ -26,7 +26,7 @@ function Contact() {
   };
   return (
  <section
-      id="education"
+      id="contact"
       className="px-[12vw] md:px-[7vw] lg:px-[14vw] font-sans mb-20"
     >
       {/* Section Title */}
@@ -41,7 +41,7 @@ function Contact() {
       <div  className='flex flex-col gap-12 md:flex-row text-white'>
         {/* left side */}
         <div className='md:w-1/2'>
-         <h1 className='text-3xl sm:text-4xl md:text-5xl bg-gradient-custom bg-clip-text text-transparent font-semibold mb-8'>Let's Connect</h1>
+         <h1 className='text-3xl sm:text-4xl text-center md:text-left md:text-5xl bg-gradient-custom bg-clip-text text-transparent font-semibold mb-8'>Let's Connect</h1>
          <p className='text-gray-400 text-md mb-8 mx-auto'>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, I'll do my best to get back to you!
         </p>
         {/* Contact Details */}
@@ -112,7 +112,7 @@ function Contact() {
 
           {/* Submit Button */}
           <button type="submit"
-            className="w-full py-3 md:py-4 text-xl font-semibold rounded-xl text-black transition-all duration-300 transform hover:scale-[1.01] shadow-lg bg-gradient-custom"
+            className="w-full py-3 md:py-3 text-xl font-medium rounded-xl text-gray-900 transition-all duration-300 transform hover:scale-[1.01] shadow-lg bg-gradient-custom"
           >
             Send message
           </button>

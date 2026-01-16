@@ -62,13 +62,13 @@ function About() {
           </h3>
 
           {/* About Paragraph */}
-          <p className='text-gray-400 mt-4 text-md sm:text-lg sm:text-lg md:px-[10vw] mx-auto  leading-relaxed'>
+          <p className='text-gray-400 mt-4 text-md sm:text-lg md:px-[20vw] text-center leading-relaxed'>
             I am a passionate Software Developer with expertise in building clean,
             user-friendly, and performance-driven applications.
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+          <div className="flex flex-row justify-center gap-4 mt-6">
             <a
               href="https://drive.google.com/file/d/1G1EpY0eMxk9oo7Z5ZqkYhPtsjusJ3eSX/view?usp=sharing"
               target="_blank"

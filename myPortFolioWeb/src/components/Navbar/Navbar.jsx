@@ -27,7 +27,7 @@ const Navbar = () => {
 
   const handleMenuItemClick = (sectionId) => {
     setActiveSection(sectionId);
-    setIsOpen(false);
+    setIsOpen(!isOpen);
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -36,13 +36,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed z-50 transition-all duration-300
+      className={`fixed p-2 z-50 transition-all duration-300 top-0 w-full bg-gray-900 shadow-md
         ${
           isScrolled
-  ? "top-0 w-full bg-gray-700 shadow-md"
-  : "top-0 md:top-4 left-1/2 -translate-x-1/2 w-full md:w-[80vw] lg:w-[70vw] md:rounded-2xl bg-gray-700 md:bg-gray-600 md:backdrop-blur-md shadow-lg"
-
-        }`}
+            ? "top-0 w-full bg-gray-900 shadow-md"
+            : "top-0 md:top-4 left-1/2 -translate-x-1/2 w-full md:w-[80vw] lg:w-[70vw] md:rounded-2xl bg-gray-900 md:bg-gray-900 md:backdrop-blur-md shadow-lg"
+        }
+        `}
     >
       <div
         className={`flex justify-between items-center h-14 font-poppins
@@ -83,14 +83,14 @@ const Navbar = () => {
         {/* Mobile Menu Icon */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(true)}>
-            <CgMenuRightAlt className="text-3xl" />
+            <CgMenuRightAlt className="text-3xl text-white" />
           </button>
         </div>
       </div>
 
       {/* ================= MOBILE SIDEBAR ================= */}
       <div
-        className={`fixed inset-0 z-50 md:hidden transition
+        className={`fixed inset-0 z-50 md:hidden transition h-screen
           ${isOpen ? "visible" : "invisible"}`}
       >
         {/* Overlay */}
