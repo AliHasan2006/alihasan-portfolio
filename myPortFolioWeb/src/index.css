@@ -103,3 +103,10 @@ html, body {
   /* color: <thumb-color> <track-color> */
   scrollbar-color: #009EC5 #121212; 
 }
+.fade-in-content {
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
